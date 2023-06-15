@@ -12,4 +12,4 @@ Ele permite que o dev deixe o site interativo, reativo e responsivo, melhorando 
 
 Unindo as três tecnologias temos o conjunto fundamental de linguagens para web, em suma é o core (nucelo) de qualquer ferramenta web, elas trabalham juntas deixando a pagina atraente, funcional e acessível, permitindo que o usuário navegue de maneira eficiente e interaja com o conteúdo apresentado.
 
-Por Johnny Trucolo
+Por Johnny Trucolo 
