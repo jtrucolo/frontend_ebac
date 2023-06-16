@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2b086d;
+}
+
+:root {
+    --fonte_titulos: 'Rubik', sans-serif;
+    --fonte_botoes: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    height: 60px;
+    background-color: #7283a8;
+}
+
+.navbar h1 {
+    margin-left: 20px;
+    color: #FFF;
+    font-family: var(--fonte_titulos);
+    font-size: 15px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    margin-right: 16px;
+    text-decoration: none;
+    color: #FFF;
+    font-family: var(--fonte_titulos);
+    font-size: 13px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+#esportes .container, #economia .container, #tecnologia .container, #entretenimento .container {
+    margin-top: 30px;
+    background-color: #d7e1f5;
+    padding: 10px;
+}
+
+.container {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d7e1f5;
+}
+
+.container time {
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.container h2 {
+    margin-left: 113px;
+    font-family: var(--fonte_titulos);
+}
+
+.container h3 {
+    font-size: 20px;
+    font-family: var(--fonte_titulos);
+    color: #FFF;
+}
+
+.container p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #FFF;
+}
+
+.articles {
+    display: flex;
+    width: 90%;
+    margin: 0 100px;
+    flex-wrap: wrap;
+}
+
+.articles article {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    margin: 10px 0px 0px 10px;
+    background-color: #7283a8;
+}
+
+.articles article img {
+    width: 300px;
+    height: 180px;
+    margin-top: 20px;
+}
+
+#economia .articles article a {
+    background-color: rgb(38, 128, 20);
+}
+
+#tecnologia .articles article a {
+    background-color: #320880;
+}
+
+#entretenimento .articles article a {
+    background-color: rgb(10, 109, 109);
+}
+
+.articles article a {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    align-items: center;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(20, 67, 128);
+    font-family: var(--fonte_botoes);
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
