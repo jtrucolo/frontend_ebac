@@ -1,6 +1,6 @@
 # PORTAL DE NOTICIAS EBAC
 
-## TECH
+#### TECH
 Feito com HTML,CSS e JS
 
 ![Alt text](image.png)
