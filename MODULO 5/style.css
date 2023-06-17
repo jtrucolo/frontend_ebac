@@ -19,7 +19,8 @@ body {
 }
 
 #contato {
-    height: 80vh;
+    height: 72vh;
+    margin-left: 5%;
 }
 
 .container li {
