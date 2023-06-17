@@ -48,9 +48,27 @@ body {
     text-decoration: underline;
 }
 
-#esportes .container, #economia .container, #tecnologia .container, #entretenimento .container {
+#esportes .container {
     margin-top: 30px;
-    background-color: #d7e1f5;
+    background-color: #939db3;
+    padding: 10px;
+}
+
+#economia .container {
+    margin-top: 30px;
+    background-color: #b3c4e7;
+    padding: 10px;
+}
+
+#tecnologia .container {
+    margin-top: 30px;
+    background-color: #8d9ab4;
+    padding: 10px;
+}
+
+#entretenimento .container {
+margin-top: 30px;
+    background-color: #c2cfeb;
     padding: 10px;
 }
 
