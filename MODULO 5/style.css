@@ -19,7 +19,7 @@ body {
 }
 
 #contato {
-    height: 72vh;
+    height: 65vh;
     margin-left: 5%;
 }
 
@@ -50,6 +50,7 @@ main section .container {
     margin-top: 30px;
     max-width: 1150px;
     width: 100%;
+   
 }
 
 main section .container img {
@@ -118,6 +119,10 @@ main section .container h2 {
     border-color: #333;
 }
 
+.container-mid form input:focus, .container-mid form textarea:focus {
+    outline: none !important;
+}
+
 .container-mid button {
     width: 150px;
     height: 30px;
@@ -157,6 +162,7 @@ main section .container h2 {
     width: 500px;
     margin-left: 2rem;
     padding: 2rem;
+    margin-top: 40px !important;
 }
 
 .container-auxiliar .end , .container-auxiliar .end h3 , .container-auxiliar .redes , .container-auxiliar .redes  h3 {
@@ -178,34 +184,54 @@ main section .container h2 {
     margin-left: 8px;
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 500px) {
 
-    #contato {
-        margin-left: 5rem;
+    header {
+        display: flex;
+        width: 100vw !important;
+        font-size: 10px;
     }
 
-
-    .container-mid .redes , .container-mid .end {
-        margin-left: -2rem !important;
+    header li {
+        font-size: 13px;
+        margin-right: 10px;
     }
 
-    main section .container h2 , p , ul {
-       margin-left: 1rem;
-    }
-    
     main section .container img {
-        width: 250px;
-        margin-left: 1.4rem;
+        width: 300px !important;
     }
 
-    .container-mid  {
-        display: flex;
-        flex-direction: column !important;
+    main section .container li img {
+        width: 40px !important;
     }
 
-    .container-auxiliar {
+    main section .container {
         display: flex;
         flex-direction: column !important;
-        margin-left: -6rem;
+        width: 300px;
+    }
+
+    .texto_loja {
+        margin-top: 2rem;
+    }
+
+    #contato .container-mid, #contato .container-auxiliar {
+        display: flex;
+        flex-direction: column !important;
+        margin-left: -6.3rem;
+        width: 200px;
+    }
+
+    #contato .container-mid h2 {
+        margin-left: -4rem;
+    }
+
+    .container-mid form {
+        margin-left: -4rem;
+        margin-top: -2rem;
+    }
+
+    h2 {
+        width: 200px !important;
     }
 }
