@@ -14,14 +14,14 @@ form.addEventListener('submit', function(e) {
     //console.log('valor_2');
     
     if (valor_2 > valor_1) {
-        const mensagemSucesso = 'Formulario valido, Primeiro numero maior que o Segundo';
+        const mensagemSucesso = 'Formulario valido, Segundo numero maior que o Primeiro';
         containerSucesso.style.display = 'flex';
         barraProgresso.style.display = 'flex';
         containerFalha.style.display = 'none';
         containerSucesso.innerHTML = mensagemSucesso;
     }
     else {
-        const mensagemFalha = 'Formulario invalido, Segundo numero maior que o Primeiro';
+        const mensagemFalha = 'Formulario invalido, Primeiro numero maior que o Segundo';
         containerFalha.style.display = 'flex';
         barraProgresso.style.display = 'flex';
         containerSucesso.style.display = 'none';
