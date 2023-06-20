@@ -163,7 +163,7 @@ main section .container h2 {
     display: flex;
     flex-direction: column !important;
     align-items: start !important;
-    margin-top: -10px;
+    margin-top: -20px;
     width: 350px;
 }
 
@@ -179,33 +179,51 @@ main section .container h2 {
 }
 
 @media screen and (max-width: 615px) {
-
-    #contato {
-        margin-left: 5rem;
+    main section .container {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
+    main section .container h2 {
+        margin-top: 2rem !important;
+    }
 
-    .container-mid .redes , .container-mid .end {
-        margin-left: -2rem !important;
+    #contato {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 4rem;
     }
 
     main section .container h2 , p , ul {
-       margin-left: 1rem;
+       margin-left: .5rem;
     }
     
     main section .container img {
         width: 250px;
-        margin-left: 1.4rem;
     }
 
     .container-mid  {
         display: flex;
         flex-direction: column !important;
+        width: 60px;
+    }
+
+    .container-auxiliar .redes h3 , .container-auxiliar .end h3 {
+        width: 130px;
+        text-align: left !important;
     }
 
     .container-auxiliar {
         display: flex;
         flex-direction: column !important;
         margin-left: -6rem;
+        width: 200px;
+    }
+
+    .container-auxiliar .redes, .container-auxiliar .end {
+        width: 90px;
     }
 }
