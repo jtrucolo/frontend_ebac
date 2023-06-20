@@ -54,6 +54,10 @@
     color: #fff;
 }
 
+.container form input:focus {
+    outline: none;
+}
+
 .invalido
 {
     display: none;
