@@ -53,6 +53,10 @@
     margin: 0 auto;
 }
 
+.container form input:focus {
+    outline: none;
+}
+
 .invalido
 {
     display: none;
