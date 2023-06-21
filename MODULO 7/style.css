@@ -48,10 +48,9 @@
     justify-content: center;
     width: 400px;
     height: 20px;
-    margin-left: 70%;
-    margin-top: -15%;
     background-color: green;
     color: #fff;
+    margin: 0 auto;
 }
 
 .invalido
@@ -60,20 +59,19 @@
     justify-content: center;
     width: 400px;
     height: 20px;
-    margin-left: 70%;
-    margin-top: -15%;
     background-color: red;
     color: #fff;
+    margin: 0 auto;
 }
 
 
 .barraProgresso {
     display: none;
-    margin-left: 70% !important;
     width: 400px;
     height: 2px;
     background-color: blue;
     animation: diminuirBarra 3s linear forwards;
+    margin: 0 auto;
   }
 
   @keyframes diminuirBarra {
