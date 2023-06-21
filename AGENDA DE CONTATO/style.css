@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+:root {
+    --cor-principal: #6b6b6b;
+    --cor-claro: #a8a8a8;
+    --cor-escuro: #4b4848;
+  }
+
+  body {
+    background: linear-gradient(45deg, var(--cor-principal), var(--cor-claro), var(--cor-principal), var(--cor-escuro), var(--cor-principal));
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+  }
+
+.container-header header {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.container-header header img {
+    width: 60px;
+}
+
+.container-header h1 {
+    margin-left: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 640px;
+    width: 100%;
+    height: 300px;
+    padding: 16px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 300px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #59b99e;
+    border-top-left-radius: 10px;
+    padding: 6px;
+}
+
+.lista th , td {
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+    padding-right: 26px;
+    font-weight: 600;
+    font-family: 'Tajawal', sans-serif; 
+}
+
+.salvar {
+    background-color: #59b99e;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    color: #fff;
+    border-top-right-radius: 10px;
+}
+
+.salvar h2 , .lista h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.salvar form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.salvar form input {
+    position: static;
+    margin: 6px;
+    outline: none;
+    width: 233px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    background: none;
+    margin-top: 22px;
+    padding: 16px;
+}
+
+.salvar form input::placeholder {
+    color: #FFF;
+}
+
+.salvar form .span-nome {
+    margin-top: -32px;
+    margin-left: -98px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.salvar form .span-contato {
+    margin-top: -32px;
+    margin-left: -98px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.salvar form input:focus ~ span {
+    transform: translateY(-22px) translateX(-23px);
+    font-size: 10px;
+}
+
+.salvar form button {
+    width: 133px;
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: -100px;
+    margin-top: 40px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #59b99e;
+    margin-left: -19px;
+    margin-top: 20px;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
