@@ -1,0 +1,88 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container form 
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 3rem auto;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: -1px 1px 20px 6px #333;
+}
+
+.container form input , .container form button
+{
+    margin-top: 16px;
+    border: none;
+    border-bottom: 1px solid;
+    background: none;
+    height: 30px;
+}
+
+.container form button
+{
+    background-color: rgb(160, 147, 147);
+    border: none;
+}
+
+.container form button:hover 
+{
+    cursor: pointer;
+}
+
+.container form input::placeholder 
+{
+    padding-left: 6px;
+}
+
+.valido
+{
+    display: none;
+    justify-content: center;
+    width: 400px;
+    height: 20px;
+    background-color: green;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.container form input:focus {
+    outline: none;
+}
+
+.invalido
+{
+    display: none;
+    justify-content: center;
+    width: 400px;
+    height: 20px;
+    background-color: red;
+    color: #fff;
+    margin: 0 auto;
+}
+
+
+.barraProgresso {
+    display: none;
+    width: 400px;
+    height: 2px;
+    background-color: blue;
+    animation: diminuirBarra 3s linear forwards;
+    margin: 0 auto;
+  }
+
+  @keyframes diminuirBarra {
+    0% {
+      width: 400px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
