@@ -29,7 +29,7 @@ header h1 {
 }
 
 .container {
-    max-width: 540px;
+    max-width: 740px;
     width: 100%;
     margin: 0 auto;
 }
@@ -42,9 +42,10 @@ header h1 {
 .container form {
     display: flex;
     justify-content: space-between;
-    max-width: 440px;
-    width: 100%;
-    margin-bottom: 36px;
+    max-width: 640px;
+    width: 60%;
+    margin-bottom: 36px !important;
+    margin: 0 auto;
 }
 
 .container form input {
@@ -69,7 +70,7 @@ header h1 {
     padding: 16px;
     font-size: 24px;
     font-weight: bold;
-    width: 100%;
+    width: 40%;
     text-align: center;
 }
 

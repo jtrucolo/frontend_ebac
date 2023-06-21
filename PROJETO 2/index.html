@@ -13,9 +13,9 @@
             <h1>Calculadora de Notas</h1>
         </header>
         <main>
-            <form action="#">
-                <input type="text" placeholder="Nome da Materia" required>
-                <input type="number" placeholder="Nota" required min="0" max="10">
+            <form action="#" id="form">
+                <input id="atividade" type="text" placeholder="Nome da Materia" required>
+                <input id="nota" type="number" placeholder="Nota" required min="0" max="10">
                 <button type="submit">Adicionar +</button>
             </form>
             <table cellspacing="0">
@@ -27,23 +27,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Atividade 1</td>
-                        <td>7</td>
-                        <td>
-                            <img src="./assets/aprovado.png" alt="Aprovado">
-                        </td>
-                    </tr>
+                    
                 </tbody>
                 <tfoot>
                     <tr>
                         <td>Media Final</td>
-                        <td>7</td>
-                        <td><span class="resultado">Aprovado</span></td>
+                        <td id="media-final">---</td>
+                        <td id="resultado-nota">---</td>
                     </tr>
                 </tfoot>
             </table>
         </main>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
