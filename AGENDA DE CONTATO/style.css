@@ -117,18 +117,6 @@
     transition: 0.5s;
 }
 
-.salvar form .span-contato {
-    margin-top: -32px;
-    margin-left: -98px;
-    font-size: 13px;
-    transition: 0.5s;
-}
-
-.salvar form input:focus ~ span {
-    transform: translateY(-22px) translateX(-23px);
-    font-size: 10px;
-}
-
 .salvar form button {
     width: 133px;
     height: 30px;
@@ -145,7 +133,7 @@
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-right: 20px solid #59b99e;
-    margin-left: -19px;
+    margin-left: -20px;
     margin-top: 20px;
 }
 
