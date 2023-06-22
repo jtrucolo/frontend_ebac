@@ -11,7 +11,7 @@ const tempo_espera = 2000;
 
 $(numero_contato).inputmask({ mask: '(99)99999-9999'});
 
-numero_contato.addEventListener('input', function(event) {
+numero_contato.addEventListener('click', function(event) {
     const valorDigitado = event.target.value;
     const regex = /[a-zA-Z~`!@#$%^&*()\-_=+[{\]}\\|;:'",<.>/?]/;
   
