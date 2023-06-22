@@ -14,18 +14,11 @@
     --cor-escuro: #4b4848;
   }
 
-.bg_video{
-	position: fixed; 
-	right: 0; 
-	bottom: 0;
-	min-width: 100%; 
-	min-height: 100%;
-	width: auto; 
-	height: auto; 
-	z-index: -1000;
-	background-size: cover; 
+body {
+    background: linear-gradient(45deg, #ff0080, #8200ff, #00ff80, #00b0ff);
+    background-size: 400% 400%;
+    animation: animateBackground 10s ease infinite;
 }
-
 .container-header header {
     display: flex;
     justify-content: center;
@@ -169,3 +162,15 @@
     font-size: 15px;
     margin-top: 10px;
 }
+
+@keyframes animateBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
