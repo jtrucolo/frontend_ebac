@@ -63,15 +63,15 @@ form.addEventListener('submit', function(e) {
             let sucesso = 'Contato salvo com Sucesso';
             sucesso_contato.style.display = 'flex';
             sucesso_contato.innerHTML = sucesso;
+
+            nome_contato.value = '';
+            numero_contato.value = '';
         }  
     }
 
     function insereDados() {
         const corpoTabela = document.querySelector('tbody');
         corpoTabela.innerHTML = linhas;
-
-        nome_contato.value = '';
-        numero_contato.value = '';
     }
 
     function displayOff() {
