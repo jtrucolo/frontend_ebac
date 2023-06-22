@@ -14,14 +14,21 @@
     --cor-escuro: #4b4848;
   }
 
-  body {
-    background: linear-gradient(45deg, var(--cor-principal), var(--cor-claro), var(--cor-principal), var(--cor-escuro), var(--cor-principal));
-    background-size: 400% 400%;
-    animation: gradient-animation 10s ease infinite;
-  }
+.bg_video{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background-size: cover; 
+}
 
 .container-header header {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 130px;
     max-width: 540px;
@@ -36,6 +43,7 @@
 
 .container-header h1 {
     margin-left: 30px;
+    color: #fff;
 }
 
 .container {
@@ -44,8 +52,10 @@
     margin: 0 auto;
     max-width: 640px;
     width: 100%;
-    height: 300px;
+    height: 350px;
     padding: 16px;
+    box-shadow: 0px 0px 56px 4px #282b28;
+    border-radius: 20px;
 }
 
 .lista {
@@ -83,6 +93,11 @@
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 16px;
+}
+
+.salvar h2 {
+    font-weight: 400;
+    margin-top: 15px;
 }
 
 .salvar form {
@@ -123,7 +138,7 @@
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    margin-left: -100px;
+    margin-left: -95px;
     margin-top: 40px;
 }
 
@@ -137,14 +152,20 @@
     margin-top: 20px;
 }
 
-@keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+.error {
+    display: none;
+    justify-content: center;
+    margin: 0 auto;
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.success {
+    display: none;
+    justify-content: center;
+    margin: 0 auto;
+    color: rgb(17, 61, 17);
+    font-size: 15px;
+    margin-top: 10px;
+}
