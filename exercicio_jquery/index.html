@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="shortcut icon" href="./assets/casa.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Lista Mercado</title>
 </head>
@@ -12,6 +13,7 @@
         <h1>
             Controle de Mercado Casinha
         </h1>
+        <img src="./assets/casa.png" alt="Home Sweet Home">
     </header>
     <main>
         <div class="container">
@@ -22,10 +24,14 @@
 
            <div class="container-mid">
             <ul>
-                
+                <li style="list-style: none;">
+                    <p class="mercadoria line"></p>
+                    <div class="erro">
+                        <p>Você não pode adicionar mercadorias vazias</p>
+                    </div>
+                </li>
             </ul>
-           </div>
-            
+           </div>           
         </div>
     </main>
 </body>

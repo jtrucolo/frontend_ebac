@@ -1,23 +1,40 @@
 $(document).ready(function() {
 
+    let erro = $('.erro p');
+    let tempo = 3000;
+
     $('form').submit(function(e){
         e.preventDefault();
 
-        const mercadoria = $('#mercadoria').val();
-        const novo_item = $('<li"></li>');
+        displayOff();
 
-        $(`<p class="mercadoria">${mercadoria}</p>`).appendTo(novo_item);
+        if($('#mercadoria').val('')) {
+            erro.css('display', 'flex');
+        }
 
-       $(`<div class="container-mid">
-        <p class="mercadoria">${mercadoria}</p>
-       </div>`);
-
-       $(novo_item).appendTo('ul');
-
-       $('#mercadoria').val('');
+        else {
+            const mercadoria = $('#mercadoria').val();
+            const novo_item = $('<li"></li>');
+    
+            $(`<p class="mercadoria">${mercadoria}</p>`).appendTo(novo_item);
+    
+           $(`<div class="container-mid">
+            <p class="mercadoria">${mercadoria}</p>
+           </div>`);
+    
+           $(novo_item).appendTo('ul');
+    
+           $('#mercadoria').val('');
+    
+            $('.mercadoria').click(function(){
+                $(this).addClass('line');
+            });
+        }
     });
 
-    $('.mercadoria').click(function(){
-        $('.mercadoria').addClass('.line');
-    })
-})
+    function displayOff() {
+        erro.css('display','none');
+    }
+
+    setTimeout(displayOff, tempo, erro);
+});
