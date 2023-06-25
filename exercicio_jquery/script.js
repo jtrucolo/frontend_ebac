@@ -6,9 +6,9 @@ $(document).ready(function() {
     $('form').submit(function(e){
         e.preventDefault();
 
-        displayOff();
+       displayOff();
 
-        if($('#mercadoria').val('')) {
+        if($('#mercadoria').val() == "") {
             erro.css('display', 'flex');
         }
 
@@ -30,11 +30,11 @@ $(document).ready(function() {
                 $(this).addClass('line');
             });
         }
+
+        function displayOff() {
+            erro.css('display','none');
+        }
+    
+        setTimeout(displayOff, tempo, erro);
     });
-
-    function displayOff() {
-        erro.css('display','none');
-    }
-
-    setTimeout(displayOff, tempo, erro);
 });
