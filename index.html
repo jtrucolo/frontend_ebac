@@ -3,42 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <link rel="shortcut icon" href="./assets/casa.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Lista Mercado</title>
+    <title>Formulario jQuery</title>
 </head>
 <body>
-    <div class="desktop-view">
-        <p>Acesse pelo dispositivo movel</p>
+    <div class="container">
+        <form action="#">
+            <div class="campo">
+             <label for="nome_usuario">Nome Completo</label>
+             <input id="nome_usuario" name="nome_usuario" type="text">
+            </div>
+            <div class="campo">
+             <label for="email_usuario">E-mail</label>
+             <input id="email_usuario" name="email_usuario" type="text">
+            </div>
+             <div class="campo">
+                 <label for="telefone_usuario">Telefone</label>
+                 <input id="telefone_usuario" name="telefone_usuario" type="text">
+             </div>
+             <div class="campo">
+                 <label for="cpf_usuario">CPF</label>
+                 <input id="cpf_usuario" name="cpf_usuario" type="text">
+             </div>
+            <div class="campo">
+             <label for="cep_usuario">CEP</label>
+             <input id="cep_usuario" name="cep_usuario" type="text">
+            </div>
+            <button type="submit">Enviar</button>
+         </form>
     </div>
-    <header>
-        <h1>
-            Lista de Mercado
-        </h1>
-        <img src="./assets/casa.png" alt="Home Sweet Home">
-    </header>
-    <main>
-        <div class="container">
-            <form action="#">
-                <input id="mercadoria" type="text" placeholder="Mercadoria">
-                <button type="submit">Adicionar</button>
-            </form>
-
-           <div class="container-mid">
-            <ul>
-                <li style="list-style: none;">
-                    <p class="mercadoria line"></p>
-                </li>
-            </ul>
-           </div>      
-                   
-           <div class="erro">
-            <p>Você não pode adicionar mercadorias vazias</p>
-        </div> 
-
-        </div>
-    </main>
 </body>
-<script src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/messages_pt_BR.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/script.js"></script>
 </html>
