@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #141325;
+    color: #fff;
+}
+
+.nav .nav-link.active {
+    color: #e72313;
+}
+
+header .nav-link {
+    color: #fff;
+}
+
+#cursos button.active {
+    background-color: #141325;
+    color: #fff;
+}
+
+header .container button {
+    background-color: #9b9999;
+}
+
+#switch input {
+    cursor: pointer;
+}
+
+#depoimentos h3 {
+    font-size: 20px;
+}
+
+#depoimentos time {
+    display: flex;
+    font-size: 12px;
+    margin-top: -5px;
+    color: #9b9999;
+}
+
+#form {
+    background-color: #141325;
+    border-radius: 6px;
+    padding: 16px;
+    width: 400px;
+}
+
+#form label {
+    margin-top: 15px;
+    color: #9b9999;
+}
+
+#form textarea {
+    margin-top: 20px;
+}
+
+#form button {
+    margin-top: 15px;
+}
+
+.midias li, a
+{
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
