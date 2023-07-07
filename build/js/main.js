@@ -1,0 +1,1 @@
+function ಠ_ಠ4(){console.log("Hello World")}
