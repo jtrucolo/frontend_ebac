@@ -1,0 +1,25 @@
+@import './config/reset.less';
+@import './styles/header.less';
+@import './styles/products.less';
+@import './config/midia_query.less';
+
+@media @breakPointTablet {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media @breakPointMobile {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
