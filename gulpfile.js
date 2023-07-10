@@ -19,7 +19,7 @@ function compressJs() {
 } //comprime arquivos js
 
 function compSass() {
-    return gulp.src('./source/css/*scss')
+    return gulp.src('./source/css/*.scss')
     .pipe(sm.init())
     .pipe(sass({
         outputStyle: 'compressed'
@@ -28,4 +28,4 @@ function compSass() {
     .pipe(gulp.dest('./build/css'));
 } //compila arquivos sass
 
-exports.task = gulp.parallel(compressJs,compSass, compImg);
+exports.default = gulp.parallel(compressJs,compSass, compImg);
